@@ -1,0 +1,36 @@
+.page-template{
+  .ant-form-inline{
+    .ant-form-item {
+      margin-right: 30px;
+      margin-bottom: 20px;
+      &:last-child{
+        // float: right ;
+        // margin: 0;
+      }
+      .ant-form-item-label{
+        width: 80px;
+      }
+      .ant-select{
+        top: 0;
+      }
+      .ant-input-group-addon{
+        .ant-select{
+          width: auto;
+        }
+      }
+      .ant-select,.ant-input,.ant-input-number{
+        width: 200px;
+        &.ant-calendar-picker-input{
+          width: auto;
+          min-width: 200px;        
+        }
+      }
+    }
+  }
+  .ant-table-tbody,
+  .ant-table-thead > tr > th{
+    text-align: center;
+    min-width: 80px;
+    max-width: 200px;
+  }
+}

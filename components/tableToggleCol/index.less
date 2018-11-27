@@ -1,0 +1,68 @@
+.tableToggleCol {
+  .toggleColWrap{
+    position:fixed;
+    z-index:999;
+    left: 0;
+    right: 0;
+    top:0;
+    background: rgba(0,0,0,.5);
+  }
+  .toggleCol{
+    padding:0!important;
+    width: 200px;
+    position: fixed;
+    z-index:999;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.9);
+    .ant-menu{
+      background: none;
+    }
+    .ant-menu-vertical{
+      .ant-menu-item{
+        &:nth-child(1){
+          padding: 0px;
+          position: fixed;
+          width: 100%;
+          z-index: 999;
+          background: #fff;
+          top: 0;
+          .clear{
+            position: fixed;
+            top: 4px;
+            right: 5px;
+            font-size: 12px;
+            color: #13af64;
+          }
+        }
+        &:nth-child(2){
+          margin-top:38px;
+        }
+        line-height: 29px;
+        height: 40px;
+        margin:0;
+        padding:0;
+        label{
+          width: 100%;
+          padding: 5px 12px;
+        }
+      }
+    }
+  }
+  .toggleCol::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+  }
+  .toggleCol::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #12b362;
+  }
+  .toggleCol::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+  }
+
+}

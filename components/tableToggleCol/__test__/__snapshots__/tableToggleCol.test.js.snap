@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tableToggleCol mount 快照对比 1`] = `
+<div
+  className="tableToggleCol"
+>
+  <div
+    className="ant-row-flex ant-row-flex-end"
+    style={
+      Object {
+        "marginLeft": -8,
+        "marginRight": -8,
+        "marginTop": -32,
+      }
+    }
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <button
+        className="ant-btn"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
+      >
+        <i
+          className="anticon anticon-appstore-o"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

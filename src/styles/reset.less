@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'PingFangSC-Light', Tahoma, Arial, 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft Yahei', sans-self;
+}
+
+.cc{
+
+  &-content{
+    padding: 30px;
+  }
+
+  &-input-size{
+    width: 200px;
+    &-sm{
+      width: 140px;
+    }
+    &-lg{
+      width: 300px;
+    }
+  }
+
+  &-table{
+    .ant-switch-inner{
+      transform: scale(.85);
+    }
+
+    a{
+      margin: 0 3px;
+    }
+
+    &-filter{
+      margin-bottom: 10px;
+      overflow: hidden;
+
+      &.ant-form-inline{
+        .ant-form-item{
+          margin-right: 40px;
+          margin-bottom: 20px;
+
+          &:last-child{
+            float: right;
+            margin-right: 0;
+
+            .ant-btn{
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .ant-select{
+          width: 140px;
+        }
+      }
+    }
+
+    &-operation{
+      margin-bottom: 20px;
+
+      > .ant-btn{
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.ant-table-tbody,
+.ant-table-thead > tr > th{
+  text-align: center;
+}
