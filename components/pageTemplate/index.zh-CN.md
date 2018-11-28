@@ -20,6 +20,7 @@ subtitle: 页面模板
 | --- | --- | --- | --- | --- |
 |rowKey | string | 否 | id | 表格行 key 的取值 |
 |config | Object | 是 | - |详情见下方 |
+|requestOption | Object | 否 | {} | http请求参数覆盖 |
 |filter | Array\<Object\>  | 是 | [] | |
 |needExport | String | 否 | - | 导出按钮权限路径|
 |toolbar | ReactNode | 否 | - | table的工具栏 |
@@ -34,7 +35,7 @@ subtitle: 页面模板
 ## config
 | 字段 | 数据类型 | 是否必填 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-|url | string | 是 | - | 列表请求数据的url |
+|url | Object | 是 | - | 列表请求数据的url体， { url: '', method: 'get'} |
 |type | string | 否 | 'get' | 列表请求方式 |
 |pageSize | string | 否 | 10 | 分页数 |
 |searchOnLoad | boolean | 否 | true | 是否默认执行搜索 |

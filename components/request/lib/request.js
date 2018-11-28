@@ -24,7 +24,8 @@ const defaultOption = {
   loading: true,
   errorToast: true, // 异常业务code时，弹出错误提示，默认弹出
   intactData: false, // 完整数据，默认false，默认只返回业务数据的data部分
-  messageRedefine: 'message', // 有些服务端为了兼容新老系统，不会采用message弹出错误，增加message重定义入口
+  messageKey: 'message', // 有些服务端为了兼容新老系统，不会采用message弹出错误，增加message重定义入口
+  authUrlKey: 'authUrl', // 有些服务端为了兼容新老系统，不会采用message弹出错误，增加message重定义入口
 };
 
 
@@ -117,8 +118,7 @@ const request = (options) => {
   return axios({
     ...options,
     validateStatus(status) {
-      return ((status >= 550 && status <= 560) // 556的时候是未认证的，需要唤起iframe的父级进行跳转登录.
-            || status === 200);
+      return (status >= 550 && status <= 560) || status === 200;
     },
   });
 };
@@ -136,21 +136,22 @@ axios.interceptors.request.use((config) => {
 axios.interceptors.response.use((response) => {
   hideLoading();
   const {
-    status, data, config,
+    status, data, config = {},
   } = response;
+  const { authUrlKey = '' } = config;
 
   // 处理权限不通过、cookie失效等问题
   if (status >= 550 && status <= 560) {
     if (status === 556) {
       if (!reloginModal) {
         reloginModal = Modal.error({
-          title: data.authFilterErrorMessage,
+          title: '警告',
           okText: '确认',
           onOk() {
             if (window.parent.length > 0) {
-              window.parent.location.href = data.authFilterSeverLoginUrl;
+              window.parent.location.href = data[authUrlKey];
             } else {
-              window.location.href = data.authFilterSeverLoginUrl;
+              window.location.href = data[authUrlKey];
             }
           },
         });
@@ -164,19 +165,9 @@ axios.interceptors.response.use((response) => {
     return;
   }
 
-  // let bizSuccess = true; // 异步请求结果状态
-  //
-  // if (Array.isArray(config.code)) {
-  //   if (config.code.indexOf(data.code) === -1) {
-  //     bizSuccess = false;
-  //   }
-  // } else if (data.code !== config.code) {
-  //   bizSuccess = false;
-  // }
-
-  // 如果请求返回的code不等于成功code（默认200）
+  // 如果请求返回的数据中的code不等于成功code（默认200）
   if (data.code !== config.code) {
-    config.errorToast && message.error(data[config.messageRedefine] || '返回数据异常');
+    config.errorToast && message.error(data[config.messageKey] || '返回数据异常');
 
     return Promise.reject(new Error(`${JSON.stringify({
       success: false,

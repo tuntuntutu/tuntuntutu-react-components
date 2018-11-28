@@ -16,7 +16,8 @@ subtitle: 日志
 
 字段 | 数据类型 | 是否必填 | 默认值 | 备注
 --- | --- | --- | --- | ---
-url | String | 是 | '' | 请求地址
+url | Object | 是 | -- | 请求地址 {url: '', method:'get'}
+requestOption | Object | 否 | {} | http请求配置覆盖
 query | Object | 是 | null | 请求参数
 columns |Array | 是 | [ ] | 表格的列名
 text | String | 否 | '日志' | 打开组件的链接的名字

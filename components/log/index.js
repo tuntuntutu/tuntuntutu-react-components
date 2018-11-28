@@ -33,9 +33,8 @@ class Log extends Component {
     const param = beforeRequest(query, options);
 
     request({
-      method: 'post',
       ...requestOption,
-      url,
+      ...url,
       data: {
         pageSize: options.pageSize,
         pageNum: options.pageNum,
@@ -119,7 +118,7 @@ Log.propTypes = {
   children: PropTypes.element,
   text: PropTypes.string,
   title: PropTypes.string,
-  url: PropTypes.string,
+  url: PropTypes.object.isRequired,
   query: PropTypes.object,
   columns: PropTypes.array,
   rowKey: PropTypes.string,
@@ -134,7 +133,6 @@ Log.defaultProps = {
   text: '日志',
   title: '操作日志',
   rowKey: 'id',
-  url: '',
   query: null,
   columns: [],
   needPagination: true,
