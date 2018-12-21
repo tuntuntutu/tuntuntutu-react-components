@@ -1,20 +1,23 @@
 {
   "name": "tuntuntutu-react-components",
-  "version": "1.0.1",
-  "main": "components/index.js",
-  "module": "components/index.js",
+  "version": "1.0.2",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "sideEffects": [
     "components/**/*.less"
   ],
   "files": [
-    "components"
+    "es",
+    "lib"
   ],
   "scripts": {
     "start": "ytian-scabbard serve --open",
     "dev": "ytian-scabbard serve --open",
     "precommit": "lint-staged",
     "test": "jest components/*/__test__/*.test.js --colors --config .jest.js",
-    "wintest": "jest --colors --config .jest.js"
+    "wintest": "jest --colors --config .jest.js",
+    "es": "cross-env NODE_ENV=production c3-tools run -t es",
+    "lib": "cross-env NODE_ENV=production c3-tools run -t commonjs"
   },
   "license": "ISC",
   "babel": {
@@ -53,6 +56,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-ytian": "^2.0.0",
+    "c3-tools": "^1.5.0-alpha.7",
+    "cross-env": "^5.2.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
