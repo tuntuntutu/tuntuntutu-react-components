@@ -1,16 +1,16 @@
 ---
 category: pc
 type: 基础
-title: Log
+title: ModalList
 cols: 1
 subtitle: 日志
 ---
 
-弹窗展示日志
+弹窗展示列表
 
 ## 何时使用
 
-适用查看操作日志的场景
+适用查看操作日志等场景
 
 ## API
 

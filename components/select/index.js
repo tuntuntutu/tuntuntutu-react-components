@@ -40,7 +40,15 @@ class SelectMax extends React.Component {
 
     return (
       <Select allowClear {...others}>
-        {items.map(item => <Option {...item} value={item[key]} key={item[key]}>{item[value]}</Option>)}
+        {items.map(item => (
+          <Option
+            value={item[key]}
+            key={item[key]}
+            title={item.title || item[value]}
+            disabled={item.disabled || false}
+            className={item.className || ''}
+          >{item[value]}</Option>
+        ))}
       </Select>
     );
   }

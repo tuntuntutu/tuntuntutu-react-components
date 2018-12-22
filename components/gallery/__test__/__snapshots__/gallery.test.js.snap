@@ -1,0 +1,894 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PicturesGallery组件 render Gallery correctly 1`] = `
+<Gallery
+  imgList={
+    Array [
+      "http://pic1.win4000.com/pic/a/9e/1d031613571.jpg",
+      "https://www.linuxprobe.com/wp-content/uploads/2017/06/GO-1YEAR-01-1024x538.jpg",
+      "https://cdn.arstechnica.net/wp-content/uploads/2018/06/7-2-1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbs5lK2RZjCr642ul6iOIdNHO2F29M8FvTnC3EKIGyxDI3wlK",
+    ]
+  }
+  index={0}
+  onClose={[MockFunction]}
+  visible={true}
+>
+  <div>
+    <ReactImageLightboxRotate
+      animationDisabled={false}
+      animationDuration={300}
+      animationOnKeyInput={false}
+      clickOutsideToClose={true}
+      closeLabel="Close lightbox"
+      discourageDownloads={false}
+      enableZoom={true}
+      imageCaption={null}
+      imageLoadErrorMessage={
+        <p>
+          加载失败
+        </p>
+      }
+      imagePadding={10}
+      imageTitle={
+        <a
+          href="http://pic1.win4000.com/pic/a/9e/1d031613571.jpg"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          查看原件
+        </a>
+      }
+      keyRepeatKeyupBonus={40}
+      keyRepeatLimit={180}
+      mainSrc="http://pic1.win4000.com/pic/a/9e/1d031613571.jpg"
+      mainSrcThumbnail={null}
+      nextLabel="Next image"
+      nextSrc="https://www.linuxprobe.com/wp-content/uploads/2017/06/GO-1YEAR-01-1024x538.jpg"
+      nextSrcThumbnail={null}
+      onAfterOpen={[Function]}
+      onCloseRequest={[Function]}
+      onImageLoadError={[Function]}
+      onImageRotate={[Function]}
+      onMoveNextRequest={[Function]}
+      onMovePrevRequest={[Function]}
+      onPreMoveNextRequest={[Function]}
+      onPreMovePrevRequest={[Function]}
+      prevLabel="Previous image"
+      prevSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbs5lK2RZjCr642ul6iOIdNHO2F29M8FvTnC3EKIGyxDI3wlK"
+      prevSrcThumbnail={null}
+      reactModalStyle={Object {}}
+      saveBeforeAfterState={true}
+      toolbarButtons={null}
+      wrapperClassName=""
+      zoomInLabel="Zoom in"
+      zoomOutLabel="Zoom out"
+    >
+      <ReactImageLightbox
+        animationDisabled={false}
+        animationDuration={300}
+        animationOnKeyInput={false}
+        clickOutsideToClose={true}
+        closeLabel="Close lightbox"
+        discourageDownloads={false}
+        enableZoom={true}
+        imageCaption={null}
+        imageLoadErrorMessage={
+          <p>
+            加载失败
+          </p>
+        }
+        imagePadding={10}
+        imageTitle={
+          <a
+            href="http://pic1.win4000.com/pic/a/9e/1d031613571.jpg"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            查看原件
+          </a>
+        }
+        keyRepeatKeyupBonus={40}
+        keyRepeatLimit={180}
+        mainSrc="http://pic1.win4000.com/pic/a/9e/1d031613571.jpg"
+        mainSrcThumbnail={null}
+        nextLabel="Next image"
+        nextSrc="https://www.linuxprobe.com/wp-content/uploads/2017/06/GO-1YEAR-01-1024x538.jpg"
+        nextSrcThumbnail={null}
+        onAfterOpen={[Function]}
+        onCloseRequest={[Function]}
+        onImageLoadError={[Function]}
+        onImageRotate={[Function]}
+        onMoveNextRequest={[Function]}
+        onMovePrevRequest={[Function]}
+        onPreMoveNextRequest={[Function]}
+        onPreMovePrevRequest={[Function]}
+        prevLabel="Previous image"
+        prevSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbs5lK2RZjCr642ul6iOIdNHO2F29M8FvTnC3EKIGyxDI3wlK"
+        prevSrcThumbnail={null}
+        reactModalStyle={Object {}}
+        saveBeforeAfterState={true}
+        toolbarButtons={
+          Array [
+            <button
+              className="ril-rotate-left   rotateLeftButton___2H7hX"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                className="icon icon-rotate"
+                height="512"
+                viewBox="0 0 16 16"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"
+                  fill="#ddd"
+                />
+              </svg>
+            </button>,
+            <button
+              className="ril-rotate-right   rotateRightButton___3UDch"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                className="icon icon-rotate"
+                height="512"
+                viewBox="0 0 16 16"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"
+                  fill="#ddd"
+                />
+              </svg>
+            </button>,
+          ]
+        }
+        wrapperClassName=""
+        zoomInLabel="Zoom in"
+        zoomOutLabel="Zoom out"
+      >
+        <Modal
+          ariaHideApp={true}
+          bodyOpenClassName="ReactModal__Body--open"
+          closeTimeoutMS={0}
+          contentLabel="Lightbox"
+          isOpen={true}
+          onAfterOpen={[Function]}
+          onRequestClose={[Function]}
+          parentSelector={[Function]}
+          portalClassName="ReactModalPortal"
+          role="dialog"
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          shouldFocusAfterRender={true}
+          shouldReturnFocusAfterClose={true}
+          style={
+            Object {
+              "content": Object {
+                "backgroundColor": "transparent",
+                "border": "none",
+                "borderRadius": 0,
+                "bottom": 0,
+                "left": 0,
+                "overflow": "hidden",
+                "padding": 0,
+                "right": 0,
+                "top": 0,
+              },
+              "overlay": Object {
+                "backgroundColor": "transparent",
+                "zIndex": 1000,
+              },
+            }
+          }
+        >
+          <Portal
+            containerInfo={
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: transparent; z-index: 1000;"
+                >
+                  <div
+                    aria-label="Lightbox"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background: rgb(255, 255, 255); overflow: hidden; border-radius: 0; outline: none; padding: 0px; background-color: transparent;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="ril-outer ril__outer ril__outerAnimating  "
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ril-inner ril__inner"
+                      >
+                        <div
+                          class="ril-image-next ril__imageNext ril__image ril-not-loaded"
+                          style="transform: translate3d(1024px,0px,0) scale3d(NaN,NaN,1);"
+                        >
+                          <div
+                            class="ril__loadingContainer"
+                          >
+                            <div
+                              class="ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+                            >
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="ril-image-current ril__image ril-not-loaded"
+                          style="transform: translate3d(0px,0px,0) scale3d(NaN,NaN,1);"
+                        >
+                          <div
+                            class="ril__loadingContainer"
+                          >
+                            <div
+                              class="ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+                            >
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="ril-image-prev ril__imagePrev ril__image ril-not-loaded"
+                          style="transform: translate3d(-1024px,0px,0) scale3d(NaN,NaN,1);"
+                        >
+                          <div
+                            class="ril__loadingContainer"
+                          >
+                            <div
+                              class="ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+                            >
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                              <div
+                                class="ril-loading-circle-point ril__loadingCirclePoint"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        aria-label="Previous image"
+                        class="ril-prev-button ril__navButtons ril__navButtonPrev"
+                        type="button"
+                      />
+                      <button
+                        aria-label="Next image"
+                        class="ril-next-button ril__navButtons ril__navButtonNext"
+                        type="button"
+                      />
+                      <div
+                        class="ril-toolbar ril__toolbar"
+                      >
+                        <ul
+                          class="ril-toolbar-left ril__toolbarSide ril__toolbarLeftSide"
+                        >
+                          <li
+                            class="ril-toolbar__item ril__toolbarItem"
+                          >
+                            <span
+                              class="ril-toolbar__item__child ril__toolbarItemChild"
+                            >
+                              <a
+                                href="http://pic1.win4000.com/pic/a/9e/1d031613571.jpg"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                查看原件
+                              </a>
+                            </span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ril-toolbar-right ril__toolbarSide ril__toolbarRightSide"
+                        >
+                          <li
+                            class="ril-toolbar__item ril__toolbarItem"
+                          >
+                            <button
+                              class="ril-rotate-left   rotateLeftButton___2H7hX"
+                              type="button"
+                            >
+                              <svg
+                                class="icon icon-rotate"
+                                height="512"
+                                viewBox="0 0 16 16"
+                                width="512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"
+                                  fill="#ddd"
+                                />
+                              </svg>
+                            </button>
+                          </li>
+                          <li
+                            class="ril-toolbar__item ril__toolbarItem"
+                          >
+                            <button
+                              class="ril-rotate-right   rotateRightButton___3UDch"
+                              type="button"
+                            >
+                              <svg
+                                class="icon icon-rotate"
+                                height="512"
+                                viewBox="0 0 16 16"
+                                width="512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"
+                                  fill="#ddd"
+                                />
+                              </svg>
+                            </button>
+                          </li>
+                          <li
+                            class="ril-toolbar__item ril__toolbarItem"
+                          >
+                            <button
+                              aria-label="Zoom in"
+                              class="ril-zoom-in ril__toolbarItemChild ril__builtinButton ril__zoomInButton"
+                              type="button"
+                            />
+                          </li>
+                          <li
+                            class="ril-toolbar__item ril__toolbarItem"
+                          >
+                            <button
+                              aria-label="Zoom out"
+                              class="ril-zoom-out ril__toolbarItemChild ril__builtinButton ril__zoomOutButton ril__builtinButtonDisabled"
+                              type="button"
+                            />
+                          </li>
+                          <li
+                            class="ril-toolbar__item ril__toolbarItem"
+                          >
+                            <button
+                              aria-label="Close lightbox"
+                              class="ril-close ril-toolbar__item__child ril__toolbarItemChild ril__builtinButton ril__closeButton"
+                              type="button"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+          >
+            <ModalPortal
+              ariaHideApp={true}
+              bodyOpenClassName="ReactModal__Body--open"
+              closeTimeoutMS={0}
+              contentLabel="Lightbox"
+              defaultStyles={
+                Object {
+                  "content": Object {
+                    "WebkitOverflowScrolling": "touch",
+                    "background": "#fff",
+                    "border": "1px solid #ccc",
+                    "borderRadius": "4px",
+                    "bottom": "40px",
+                    "left": "40px",
+                    "outline": "none",
+                    "overflow": "auto",
+                    "padding": "20px",
+                    "position": "absolute",
+                    "right": "40px",
+                    "top": "40px",
+                  },
+                  "overlay": Object {
+                    "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "fixed",
+                    "right": 0,
+                    "top": 0,
+                  },
+                }
+              }
+              isOpen={true}
+              onAfterOpen={[Function]}
+              onRequestClose={[Function]}
+              parentSelector={[Function]}
+              portalClassName="ReactModalPortal"
+              role="dialog"
+              shouldCloseOnEsc={true}
+              shouldCloseOnOverlayClick={true}
+              shouldFocusAfterRender={true}
+              shouldReturnFocusAfterClose={true}
+              style={
+                Object {
+                  "content": Object {
+                    "backgroundColor": "transparent",
+                    "border": "none",
+                    "borderRadius": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "right": 0,
+                    "top": 0,
+                  },
+                  "overlay": Object {
+                    "backgroundColor": "transparent",
+                    "zIndex": 1000,
+                  },
+                }
+              }
+            >
+              <div
+                className="ReactModal__Overlay ReactModal__Overlay--after-open"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "fixed",
+                    "right": 0,
+                    "top": 0,
+                    "zIndex": 1000,
+                  }
+                }
+              >
+                <div
+                  aria-label="Lightbox"
+                  className="ReactModal__Content ReactModal__Content--after-open"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  role="dialog"
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "background": "#fff",
+                      "backgroundColor": "transparent",
+                      "border": "none",
+                      "borderRadius": 0,
+                      "bottom": 0,
+                      "left": 0,
+                      "outline": "none",
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div
+                    className="ril-outer ril__outer ril__outerAnimating  "
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    onWheel={[Function]}
+                    style={
+                      Object {
+                        "animationDirection": "reverse",
+                        "animationDuration": "300ms",
+                        "transition": "opacity 300ms",
+                      }
+                    }
+                    tabIndex="-1"
+                  >
+                    <div
+                      className="ril-inner ril__inner"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="ril-image-next ril__imageNext ril__image ril-not-loaded"
+                        key="https://www.linuxprobe.com/wp-content/uploads/2017/06/GO-1YEAR-01-1024x538.jpgi1"
+                        style={
+                          Object {
+                            "transform": "translate3d(1024px,0px,0) scale3d(NaN,NaN,1)",
+                          }
+                        }
+                      >
+                        <div
+                          className="ril__loadingContainer"
+                        >
+                          <div
+                            className="ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+                          >
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="ril-image-current ril__image ril-not-loaded"
+                        key="http://pic1.win4000.com/pic/a/9e/1d031613571.jpgi0"
+                        style={
+                          Object {
+                            "transform": "translate3d(0px,0px,0) scale3d(NaN,NaN,1)",
+                          }
+                        }
+                      >
+                        <div
+                          className="ril__loadingContainer"
+                        >
+                          <div
+                            className="ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+                          >
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="ril-image-prev ril__imagePrev ril__image ril-not-loaded"
+                        key="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbs5lK2RZjCr642ul6iOIdNHO2F29M8FvTnC3EKIGyxDI3wlKi-1"
+                        style={
+                          Object {
+                            "transform": "translate3d(-1024px,0px,0) scale3d(NaN,NaN,1)",
+                          }
+                        }
+                      >
+                        <div
+                          className="ril__loadingContainer"
+                        >
+                          <div
+                            className="ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+                          >
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                            <div
+                              className="ril-loading-circle-point ril__loadingCirclePoint"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      aria-label="Previous image"
+                      className="ril-prev-button ril__navButtons ril__navButtonPrev"
+                      key="prev"
+                      onClick={[Function]}
+                      type="button"
+                    />
+                    <button
+                      aria-label="Next image"
+                      className="ril-next-button ril__navButtons ril__navButtonNext"
+                      key="next"
+                      onClick={[Function]}
+                      type="button"
+                    />
+                    <div
+                      className="ril-toolbar ril__toolbar"
+                    >
+                      <ul
+                        className="ril-toolbar-left ril__toolbarSide ril__toolbarLeftSide"
+                      >
+                        <li
+                          className="ril-toolbar__item ril__toolbarItem"
+                        >
+                          <span
+                            className="ril-toolbar__item__child ril__toolbarItemChild"
+                          >
+                            <a
+                              href="http://pic1.win4000.com/pic/a/9e/1d031613571.jpg"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              查看原件
+                            </a>
+                          </span>
+                        </li>
+                      </ul>
+                      <ul
+                        className="ril-toolbar-right ril__toolbarSide ril__toolbarRightSide"
+                      >
+                        <li
+                          className="ril-toolbar__item ril__toolbarItem"
+                          key="button_1"
+                        >
+                          <button
+                            className="ril-rotate-left   rotateLeftButton___2H7hX"
+                            key="rotate-left"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <svg
+                              className="icon icon-rotate"
+                              height="512"
+                              viewBox="0 0 16 16"
+                              width="512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"
+                                fill="#ddd"
+                              />
+                            </svg>
+                          </button>
+                        </li>
+                        <li
+                          className="ril-toolbar__item ril__toolbarItem"
+                          key="button_2"
+                        >
+                          <button
+                            className="ril-rotate-right   rotateRightButton___3UDch"
+                            key="rotate-right"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <svg
+                              className="icon icon-rotate"
+                              height="512"
+                              viewBox="0 0 16 16"
+                              width="512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"
+                                fill="#ddd"
+                              />
+                            </svg>
+                          </button>
+                        </li>
+                        <li
+                          className="ril-toolbar__item ril__toolbarItem"
+                        >
+                          <button
+                            aria-label="Zoom in"
+                            className="ril-zoom-in ril__toolbarItemChild ril__builtinButton ril__zoomInButton"
+                            key="zoom-in"
+                            onClick={[Function]}
+                            type="button"
+                          />
+                        </li>
+                        <li
+                          className="ril-toolbar__item ril__toolbarItem"
+                        >
+                          <button
+                            aria-label="Zoom out"
+                            className="ril-zoom-out ril__toolbarItemChild ril__builtinButton ril__zoomOutButton ril__builtinButtonDisabled"
+                            key="zoom-out"
+                            onClick={[Function]}
+                            type="button"
+                          />
+                        </li>
+                        <li
+                          className="ril-toolbar__item ril__toolbarItem"
+                        >
+                          <button
+                            aria-label="Close lightbox"
+                            className="ril-close ril-toolbar__item__child ril__toolbarItemChild ril__builtinButton ril__closeButton"
+                            key="close"
+                            onClick={[Function]}
+                            type="button"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ModalPortal>
+          </Portal>
+        </Modal>
+      </ReactImageLightbox>
+    </ReactImageLightboxRotate>
+  </div>
+</Gallery>
+`;

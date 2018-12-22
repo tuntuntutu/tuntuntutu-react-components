@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import Log from '../index';
+import ModalList from '../index';
 import sinon from 'sinon'
 import Enzyme, { mount } from 'enzyme';
 
@@ -32,7 +32,7 @@ const LogColumns = [{
 
 describe('Log组件', () => {
 
-  const mountLog = () => mount(<Log
+  const mountLog = () => mount(<ModalList
     url="https://rap.caocaokeji.cn/mockjsdata/188/test/list"
     query={{ pageSize: 10, pageNum: 1, query: { bizzObjId: 1, bizzType: 5 } }}
     columns={LogColumns}

@@ -1,0 +1,52 @@
+.cc-editor{
+  height: auto;
+  .ql-snow .ql-tooltip{
+    &::before{
+      content: "访问：";
+    }
+
+    a.ql-action::after{
+      content: "修改";
+    }
+    a.ql-remove::before{
+      content: "取消链接";
+    }
+    &.ql-editing{
+      a.ql-action::after{
+        content: "确定";
+      }
+    }
+    &[data-mode="link"]::before {
+      content: "输入链接地址：";
+    }
+  }
+
+  .ql-snow .ql-formats {
+    .ql-header {
+      .ql-picker-label {
+        &::before{
+          position: absolute;
+        }
+      }
+    }
+    .ql-color, .ql-background {
+      .ql-picker-label svg {
+        vertical-align: super;
+      }
+    }
+  }
+
+  .editor-loading{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .3);
+    z-index: 10;
+  }
+}
+

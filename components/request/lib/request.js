@@ -118,7 +118,7 @@ const request = (options) => {
   return axios({
     ...options,
     validateStatus(status) {
-      return (status >= 550 && status <= 560) || status === 200;
+      return status === 401 || status === 200;
     },
   });
 };
@@ -138,28 +138,21 @@ axios.interceptors.response.use((response) => {
   const {
     status, data, config = {},
   } = response;
-  const { authUrlKey = '' } = config;
 
   // 处理权限不通过、cookie失效等问题
-  if (status >= 550 && status <= 560) {
-    if (status === 556) {
-      if (!reloginModal) {
-        reloginModal = Modal.error({
-          title: '警告',
-          okText: '确认',
-          onOk() {
-            if (window.parent.length > 0) {
-              window.parent.location.href = data[authUrlKey];
-            } else {
-              window.location.href = data[authUrlKey];
-            }
-          },
-        });
-      }
-    } else if (status === 555) {
-      message.error('请求的资源不存在，请联系管理员！');
-    } else {
-      message.error(data.authFilterErrorMessage);
+  if (status === 401) {
+    if (!reloginModal) {
+      reloginModal = Modal.error({
+        title: '警告',
+        okText: '确认',
+        onOk() {
+          if (window.parent.length > 0) {
+            window.parent.location.href = '';
+          } else {
+            window.location.href = '';
+          }
+        },
+      });
     }
 
     return;

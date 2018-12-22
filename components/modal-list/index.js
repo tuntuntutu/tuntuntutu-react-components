@@ -13,7 +13,7 @@ const getIntialState = () => ({
   },
 });
 
-class Log extends Component {
+class ModalList extends Component {
   constructor(props) {
     super(props);
 
@@ -114,7 +114,7 @@ class Log extends Component {
   }
 }
 
-Log.propTypes = {
+ModalList.propTypes = {
   children: PropTypes.element,
   text: PropTypes.string,
   title: PropTypes.string,
@@ -128,7 +128,7 @@ Log.propTypes = {
   requestOption: PropTypes.object,
 };
 
-Log.defaultProps = {
+ModalList.defaultProps = {
   children: null,
   text: '日志',
   title: '操作日志',
@@ -141,4 +141,4 @@ Log.defaultProps = {
   requestOption: {},
 };
 
-export default Log;
+export default ModalList;
