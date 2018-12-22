@@ -144,12 +144,13 @@ axios.interceptors.response.use((response) => {
     if (!reloginModal) {
       reloginModal = Modal.error({
         title: '警告',
+        content: '登录失效，请重新登录',
         okText: '确认',
         onOk() {
           if (window.parent.length > 0) {
-            window.parent.location.href = '';
+            window.parent.location.href = '/login';
           } else {
-            window.location.href = '';
+            window.location.href = '/login';
           }
         },
       });

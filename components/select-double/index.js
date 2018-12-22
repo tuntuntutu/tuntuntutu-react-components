@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Select } from 'antd';
 import PropTypes from 'prop-types';
-import { request } from '../../components/index';
+import request from '../request/index.js';
 
 const { Option } = Select;
 
@@ -16,6 +16,7 @@ export default class DoubleSelect extends Component {
       firstValue: undefined,
     };
   }
+
   componentWillMount() {
     this.getFirstList();
     const { value = {}, defaultValue = {}, format } = this.props;
@@ -30,6 +31,7 @@ export default class DoubleSelect extends Component {
         firstValue: first,
         secondValue: second,
       });
+
       return;
     }
     // 普通用法赋默认值
@@ -75,6 +77,7 @@ export default class DoubleSelect extends Component {
       this.setState({ firstList: afterRequest(data).map(item => ({ value: item[value], key: item[key] })) });
     });
   }
+
   getSecondList(firstValue) {
     const { secondConfig } = this.props;
     const {
@@ -133,10 +136,8 @@ export default class DoubleSelect extends Component {
     } = this.state;
     const { width, className } = this.props;
 
-    const provinceOpts = firstList.map(item =>
-      <Option key={item.key} value={item.key}>{item.value}</Option>);
-    const cityOptions = secondList.map(item =>
-      <Option key={item.key} value={item.key}>{item.value}</Option>);
+    const provinceOpts = firstList.map(item => <Option key={item.key} value={item.key}>{item.value}</Option>);
+    const cityOptions = secondList.map(item => <Option key={item.key} value={item.key}>{item.value}</Option>);
 
     return (
       <div className={className}>
